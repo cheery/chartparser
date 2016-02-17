@@ -234,7 +234,7 @@ def traverse_sppf(sppf, postorder_callback, blank_callback, resolve_ambiguity):
             stack.extend(reversed(result))
         while rcount == 0 and len(rstack) > 0:
             rcount, rlen, sppf = rstack.pop(-1)
-            rule, args = expand(sppf.cell, blank_callback, (sstack.pop() for i in range(rlen)))
+            rule, args = expand(sppf.cell, blank_callback, (sstack.pop(i-rlen) for i in range(rlen)))
             sstack.append(postorder_callback(rule, args))
     assert len(sstack) == 1
     return sstack[0]
