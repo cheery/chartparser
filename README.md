@@ -73,3 +73,7 @@ Note that blank rules will never reach postorder_call. Instead the `blank` is ca
 I make a promise to respond on support issues as long as I keep writing python code. I also try to keep the interface described in this readme mostly unchanged from what it is now. I did lot of care to get it this clean.
 
 The parsing library exposes lot of other details you may need necessary to use. For example, my single traversing approach might not satisfy every urge. Those details may change in future.
+
+## Origins
+
+This module is using [the work of Jeffrey Kegler](http://jeffreykegler.github.io/Marpa-web-site/). He introduced these concepts to me, and the papers about Marpa helped me to refine an adaptation of the parser on python.
