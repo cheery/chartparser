@@ -77,3 +77,5 @@ The parsing library exposes lot of other details you may need necessary to use. 
 ## Origins
 
 This module is using [the work of Jeffrey Kegler](http://jeffreykegler.github.io/Marpa-web-site/). He introduced these concepts to me, and the papers about Marpa helped me to refine an adaptation of the parser on python.
+
+Before I got to read how to write a practical parser of this kind, I found it worthwhile to read [loup's explanation on earley parsing](http://loup-vaillant.fr/tutorials/earley-parsing/), that is worthwhile to mention.
